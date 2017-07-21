@@ -1,8 +1,8 @@
 # Leaflet.draw.locales
 
-[![Build Status](https://travis-ci.org/DenisCarriere/leaflet-draw-locales.svg?branch=master)](https://travis-ci.org/DenisCarriere/leaflet-draw-locales)
+[![Build Status](https://travis-ci.org/DenisCarriere/Leaflet.draw.locales.svg?branch=master)](https://travis-ci.org/DenisCarriere/Leaflet.draw.locales)
 [![npm version](https://badge.fury.io/js/leaflet-draw-locales.svg)](https://badge.fury.io/js/leaflet-draw-locales)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DenisCarriere/leaflet-draw-locales/master/LICENSE)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DenisCarriere/Leaflet.draw.locales/master/LICENSE)
 
 > Localization for [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw), changing between languages is now effortless.
 
