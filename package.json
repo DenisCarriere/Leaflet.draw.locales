@@ -1,0 +1,28 @@
+{
+  "name": "leaflet-draw-locales",
+  "version": "0.4.0",
+  "description": "Localization for Leaflet.draw",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "format": "prettier --write --single-quote  --trailing-comma es5 --no-semi locales/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisCarriere/Leaflet.draw.locales.git"
+  },
+  "keywords": [
+    "leaflet",
+    "locales",
+    "localization",
+    "draw"
+  ],
+  "author": "Denis Carriere <@DenisCarriere>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/leaflet": "^1.0.66",
+    "prettier": "^1.5.3",
+    "standard": "^10.0.2",
+    "typescript": "^2.4.2"
+  }
+}
