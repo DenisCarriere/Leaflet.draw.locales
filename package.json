@@ -4,8 +4,13 @@
   "description": "Localization for Leaflet.draw",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "locales"
+  ],
   "scripts": {
-    "format": "prettier --write --single-quote  --trailing-comma es5 --no-semi locales/*.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +25,8 @@
   "author": "Denis Carriere <@DenisCarriere>",
   "license": "MIT",
   "devDependencies": {
-    "@types/leaflet": "^1.0.66",
-    "prettier": "^1.5.3",
-    "standard": "^10.0.2",
+    "tape": "^4.7.0",
     "typescript": "^2.4.2"
-  }
+  },
+  "dependencies": {}
 }

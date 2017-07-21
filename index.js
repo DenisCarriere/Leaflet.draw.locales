@@ -4,7 +4,19 @@ const fr = require('./locales/fr')
 /**
  * Localization for Leaflet.draw
  *
- * @param {string} language Language to localize Leaflet.draw (options: en,fr)
+ * @param {string} [language='en'] Language to localize Leaflet.draw
+ * @param {Boolean} [automatic=true] Automatically defines Leaflet.draw locale
+ * @example
+ * var L = require('leaflet')
+ * var drawLocales = require('leaflet-draw-locales')
+ *
+ * // Automatically defines Leaflet.draw locale
+ * drawLocales('fr')
+ *
+ * // Customize locale language
+ * var locale = drawLocales('fr')
+ * locale.draw.toolbar.buttons.polygon = 'Awesome polygon!'
+ * L.drawLocal = locale
  */
 module.exports = function (language) {
   var locale
@@ -25,6 +37,15 @@ module.exports = function (language) {
     }
     default:
       locale = en
+      break
   }
-  console.log(locale)
+  // Automatically defines Leaflet.draw locale
+  if (automatic !== false && automatic !== null) {
+    try {
+      if (L && L.drawLocal) L.drawLocal = locale
+    } catch (e) {
+      // Did not modify Leaflet global
+    }
+  }
+  return locale
 }
