@@ -10,7 +10,9 @@
     "locales"
   ],
   "scripts": {
-    "test": "node test.js"
+    "pretest": "standard",
+    "test": "tap test.js",
+    "format": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   "author": "Denis Carriere <@DenisCarriere>",
   "license": "MIT",
   "devDependencies": {
-    "tape": "^4.7.0",
+    "standard": "^10.0.2",
+    "tap": "^10.7.0",
     "typescript": "^2.4.2"
   },
   "dependencies": {}

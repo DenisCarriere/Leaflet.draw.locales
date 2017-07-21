@@ -41,9 +41,9 @@ module.exports = function (language) {
   }
   // Automatically defines Leaflet.draw locale
   try {
-    if (L && L.drawLocal) L.drawLocal = locale
+    if (L && L.drawLocal) L.drawLocal = locale // eslint-disable-line
   } catch (e) {
-    // Did not modify Leaflet global
+    // Did not modify Leaflet.draw global
   }
   return locale
 }
