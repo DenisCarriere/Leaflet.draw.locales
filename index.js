@@ -40,12 +40,10 @@ module.exports = function (language) {
       break
   }
   // Automatically defines Leaflet.draw locale
-  if (automatic !== false && automatic !== null) {
-    try {
-      if (L && L.drawLocal) L.drawLocal = locale
-    } catch (e) {
-      // Did not modify Leaflet global
-    }
+  try {
+    if (L && L.drawLocal) L.drawLocal = locale
+  } catch (e) {
+    // Did not modify Leaflet global
   }
   return locale
 }
