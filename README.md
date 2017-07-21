@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/leaflet-draw-locales.svg)](https://badge.fury.io/js/leaflet-draw-locales)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DenisCarriere/leaflet-draw-locales/master/LICENSE)
 
-> Localization for Leaflet.draw, changing between languages is now effortless.
+> Localization for [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw), changing between languages is now effortless.
 
 ## Install
 
