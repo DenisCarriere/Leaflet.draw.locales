@@ -2,10 +2,9 @@ const en = require('./locales/en')
 const fr = require('./locales/fr')
 
 /**
- * Localization for Leaflet.draw
+ * Localization for Leaflet.draw, changing between languages is now effortless.
  *
  * @param {string} [language='en'] Language to localize Leaflet.draw
- * @param {Boolean} [automatic=true] Automatically defines Leaflet.draw locale
  * @example
  * var L = require('leaflet')
  * var drawLocales = require('leaflet-draw-locales')

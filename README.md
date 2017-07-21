@@ -1,4 +1,10 @@
-# Localization for Leaflet.draw
+# Leaflet.draw.locales
+
+[![Build Status](https://travis-ci.org/DenisCarriere/leaflet-draw-locales.svg?branch=master)](https://travis-ci.org/DenisCarriere/leaflet-draw-locales)
+[![npm version](https://badge.fury.io/js/leaflet-draw-locales.svg)](https://badge.fury.io/js/leaflet-draw-locales)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DenisCarriere/leaflet-draw-locales/master/LICENSE)
+
+> Localization for Leaflet.draw, changing between languages is now effortless.
 
 ## Install
 
@@ -27,3 +33,10 @@ L.drawLocal = locale
 |------|-------------|
 | en   | English     |
 | fr   | French      |
+
+## Submit a language
+
+- Fork this repo
+- Copy-paste an existing `.js` language from `locales/` as your template
+- Include your new language in `index.js`, `test.js` & `index.d.ts`
+- Submit your locales via a GitHub PR

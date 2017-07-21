@@ -1,7 +1,7 @@
 {
   "name": "leaflet-draw-locales",
   "version": "0.4.0",
-  "description": "Localization for Leaflet.draw",
+  "description": "Localization for Leaflet.draw, changing between languages is now effortless.",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
