@@ -33,6 +33,7 @@ L.drawLocal = locale
 |------|-------------|
 | en   | English     |
 | fr   | French      |
+| es   | Spanish     |
 
 ## Submit a language
 
