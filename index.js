@@ -1,5 +1,6 @@
 const en = require('./locales/en')
 const fr = require('./locales/fr')
+const es = require('./locales/es')
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -32,6 +33,13 @@ module.exports = function (language) {
     case 'fr_US.UTF-8':
     case 'french': {
       locale = fr
+      break
+    }
+    case 'es':
+    case 'es_US':
+    case 'es_US.UTF-8':
+    case 'spanish': {
+      locale = es
       break
     }
     default:
