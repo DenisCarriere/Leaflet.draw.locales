@@ -10,8 +10,8 @@
     "locales"
   ],
   "scripts": {
-    "pretest": "standard",
     "test": "tap test.js",
+    "posttest": "standard",
     "format": "standard --fix"
   },
   "repository": {
