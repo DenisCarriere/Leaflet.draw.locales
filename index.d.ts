@@ -4,7 +4,7 @@
 
 declare function drawLocales(language: drawLocales.Languages): drawLocales.DrawLocal
 declare namespace drawLocales {
-  type Languages = 'en' | 'fr' | 'es' | 'sk'
+  type Languages = 'en' | 'fr' | 'es' | 'ru' | 'cs' | 'uk' | 'pt' | 'sk'
   interface DrawLocal {
     draw?: Draw
     edit?: Edit

@@ -2,6 +2,10 @@ const en = require('./locales/en')
 const fr = require('./locales/fr')
 const es = require('./locales/es')
 const sk = require('./locales/sk')
+const pt = require('./locales/pt')
+const uk = require('./locales/uk')
+const cs = require('./locales/cs')
+const ru = require('./locales/ru')
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -48,6 +52,34 @@ module.exports = function (language) {
     case 'sk_SK.UTF-8':
     case 'slovak': {
       locale = sk
+      break
+    }
+    case 'pt':
+    case 'pt_PT':
+    case 'pt_PT.UTF-8':
+    case 'portuguese': {
+      locale = pt
+      break
+    }
+    case 'uk':
+    case 'uk_UA':
+    case 'uk_UA.UTF-8':
+    case 'ukrainian': {
+      locale = uk
+      break
+    }
+    case 'cs':
+    case 'cs_CZ':
+    case 'cs_CZ.UTF-8':
+    case 'czech': {
+      locale = cs
+      break
+    }
+    case 'ru':
+    case 'ru_RU':
+    case 'ru_RU.UTF-8':
+    case 'russian': {
+      locale = ru
       break
     }
     default:
