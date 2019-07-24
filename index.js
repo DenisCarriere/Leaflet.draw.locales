@@ -1,6 +1,7 @@
 const en = require('./locales/en')
 const fr = require('./locales/fr')
 const es = require('./locales/es')
+const cs = require('./locales/cs')
 const ru = require('./locales/ru')
 
 /**
@@ -41,6 +42,13 @@ module.exports = function (language) {
     case 'es_US.UTF-8':
     case 'spanish': {
       locale = es
+      break
+    }
+    case 'cs':
+    case 'cs_CZ':
+    case 'cs_CZ.UTF-8':
+    case 'czech': {
+      locale = cs
       break
     }
     case 'ru':
