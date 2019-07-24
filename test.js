@@ -1,4 +1,4 @@
-const {test} = require('tap')
+const { test } = require('tap')
 const drawLocales = require('./')
 
 test('leaflet-draw-locales', t => {
