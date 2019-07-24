@@ -2,7 +2,7 @@ const {test} = require('tap')
 const drawLocales = require('./')
 
 test('leaflet-draw-locales', t => {
-  for (const language of ['en', 'fr', 'es', 'pt']) {
+  for (const language of ['en', 'fr', 'es', 'ru', 'cs', 'uk' | 'pt']) {
     const locale = drawLocales(language)
     // Draw
     t.assert(locale.draw.handlers, 'draw.handlers')
