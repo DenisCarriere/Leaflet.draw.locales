@@ -1,18 +1,18 @@
 {
   "name": "leaflet-draw-locales",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "Localization for Leaflet.draw, changing between languages is now effortless.",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index",
+  "types": "dist/index.d.ts",
   "files": [
     "index.js",
     "index.d.ts",
     "locales"
   ],
   "scripts": {
-    "test": "tap test.js",
-    "posttest": "standard",
-    "format": "standard --fix"
+    "prepublishOnly": "tsc",
+    "test": "jest --coverage",
+    "posttest": "tslint --project ."
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
   "author": "Denis Carriere <@DenisCarriere>",
   "license": "MIT",
   "devDependencies": {
-    "standard": "*",
-    "tap": "*",
+    "@types/node": "*",
+    "ts-node": "*",
     "typescript": "*"
   },
   "dependencies": {}

@@ -15,14 +15,13 @@ $ npm install --save leaflet-draw-locales
 ## Example
 
 ```js
-var L = require('leaflet')
-var drawLocales = require('leaflet-draw-locales')
+import drawLocales from 'leaflet-draw-locales'
 
 // Automatically defines Leaflet.draw to the specified language
 drawLocales('fr')
 
 // Customize locale language
-var locale = drawLocales('fr')
+const locale = drawLocales('fr')
 locale.draw.toolbar.buttons.polygon = 'Awesome polygon!'
 L.drawLocal = locale
 ```
