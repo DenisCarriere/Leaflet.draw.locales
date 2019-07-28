@@ -32,6 +32,7 @@
     "jest": "23.x",
     "ts-jest": "23.x",
     "ts-node": "*",
+    "tslint": "*",
     "typescript": "*"
   },
   "dependencies": {}
