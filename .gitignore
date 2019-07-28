@@ -1,4 +1,5 @@
 dist
+dist.browser
 
 # Logs
 logs

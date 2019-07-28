@@ -1,11 +1,11 @@
-import cs from "./locales/cs.js";
-import en from "./locales/en.js";
-import es from "./locales/es.js";
-import fr from "./locales/fr.js";
-import pt from "./locales/pt.js";
-import ru from "./locales/ru.js";
-import sk from "./locales/sk.js";
-import uk from "./locales/uk.js";
+import cs from "./locales/cs";
+import en from "./locales/en";
+import es from "./locales/es";
+import fr from "./locales/fr";
+import pt from "./locales/pt";
+import ru from "./locales/ru";
+import sk from "./locales/sk";
+import uk from "./locales/uk";
 
 export const languages = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk"];
 

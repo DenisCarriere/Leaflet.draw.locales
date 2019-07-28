@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { languages } from "../";
+import { languages } from "../index";
 
 // Check if language exist in README.md
 test("README", () => {

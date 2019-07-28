@@ -1,4 +1,4 @@
-import drawLocales, { languages } from "..";
+import drawLocales, { languages } from "../index";
 
 test("drawLocales", () => {
   for (const language of languages) {
