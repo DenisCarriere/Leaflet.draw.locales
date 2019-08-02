@@ -78,7 +78,7 @@ const editToolbar: EditToolbar = {
       text: "Cancel",
     },
     clearAll: {
-      title: "clear all layers.",
+      title: "Clear all layers.",
       text: "Clear All",
     },
   },

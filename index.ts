@@ -2,12 +2,13 @@ import cs from "./locales/cs";
 import en from "./locales/en";
 import es from "./locales/es";
 import fr from "./locales/fr";
+import nl from "./locales/nl";
 import pt from "./locales/pt";
 import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
 
-export const languages = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk"];
+export const languages = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -85,6 +86,11 @@ export default function(language: string): DrawLocal {
       locale = ru;
       break;
     }
+    case "nl":
+    case "nl-NL":
+    case "nl-BE":
+      locale = nl;
+      break;
     default:
       throw new Error("[language] not found");
   }
