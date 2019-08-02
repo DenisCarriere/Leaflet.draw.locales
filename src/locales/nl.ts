@@ -93,7 +93,7 @@ const editToolbar: EditToolbar = {
 const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
-      text: "Sleep handgrepen of markering om het element te bewerken.",
+      text: "Sleep hoeken om te schalen of middenpunt om te verplaatsen.",
       subtext: "Klik op annuleren om wijzigingen ongedaan te maken.",
     },
   },
