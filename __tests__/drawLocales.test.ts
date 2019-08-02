@@ -27,8 +27,9 @@ test("drawLocales", () => {
     expect(locale.edit.toolbar.buttons.remove).toBeDefined();
     expect(locale.edit.toolbar.buttons.removeDisabled).toBeDefined();
   }
-  // throw error
-  expect(() => drawLocales("foobar")).toThrowError("[language] not found");
+
+  // @ts-ignore
+  expect(() => drawLocales("foobar")).toThrowError("[language] not found"); // should throw error
 });
 
 test("should work with non-default import", () => {
