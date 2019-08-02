@@ -38,6 +38,7 @@ L.drawLocal = locale
 | uk   | Ukrainian   |
 | cs   | Czech       |
 | sk   | Slovak      |
+| nl   | Dutch      |
 
 ## Submit a language
 

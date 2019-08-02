@@ -48,7 +48,7 @@ const drawHandlers: DrawHandlers = {
     },
   },
   polyline: {
-    error: "<strong>Erreur:<strong> les polyligne ne peuvent pas traverser!",
+    error: "<strong>Erreur:</strong> les polyligne ne peuvent pas traverser!",
     tooltip: {
       start: "Cliquez pour commencer à dessiner.",
       cont: "Cliquez pour continuer à dessiner.",

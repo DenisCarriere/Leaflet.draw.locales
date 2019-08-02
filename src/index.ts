@@ -27,7 +27,7 @@ export const languages = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl"];
  * locale.draw.toolbar.buttons.polygon = 'Awesome polygon!'
  * L.drawLocal = locale
  */
-export default function(language: string): DrawLocal {
+export const drawLocales = (language: string): DrawLocal => {
   let locale = en;
   switch (language) {
     case "en":
@@ -97,11 +97,13 @@ export default function(language: string): DrawLocal {
   // Automatically defines Leaflet.draw locale
   try {
     if (L && L.drawLocal) { L.drawLocal = locale; }
-  } catch (e) {
+  } catch {
     // Did not modify Leaflet.draw global
   }
   return locale;
-}
+};
+
+export default drawLocales;
 
 declare class L {
   public static drawLocal: any;

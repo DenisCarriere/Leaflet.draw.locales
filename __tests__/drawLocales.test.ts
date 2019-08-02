@@ -1,4 +1,4 @@
-import drawLocales, { languages } from "../index";
+import drawLocales, { drawLocales as drawLocalesNonDefault, languages } from "../src/index";
 
 test("drawLocales", () => {
   for (const language of languages) {
@@ -29,4 +29,8 @@ test("drawLocales", () => {
   }
   // throw error
   expect(() => drawLocales("foobar")).toThrowError("[language] not found");
+});
+
+test("should work with non-default import", () => {
+  expect(drawLocalesNonDefault).not.toBeUndefined();
 });
