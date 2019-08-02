@@ -43,6 +43,14 @@ L.drawLocal = locale
 ## Submit a language
 
 - Fork this repo
-- Copy-paste an existing `.js` language from `locales/` as your template
-- Include your new language in `index.js`, `test.js` & `index.d.ts`
+- Install node modules with `npm install`
+- Copy-paste an existing `.ts` language from `src/locales/` as your template
+- Include your new language in `src/index.ts`
+  - For `src/index.ts` it should be included at:
+    - The import at the top, import your new file
+    - The `language` contant should get the 2 letter identification for the language
+    - The switch-case should be updated to support cases for your language, setting the `locale` to the 2 letter code for the language
+    - The `Language` type should be edited to include a union of all possible cases for the language you added
+- Include your language in the table in `README.md`
+- Run `npm run test && npm run build` to confirm your code works properly
 - Submit your locales via a GitHub PR
