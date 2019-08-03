@@ -13,7 +13,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?" +
 }).addTo(map);
 
 // LeafletDraw.Locales
-drawLocales("es")
+drawLocales("nl")
 
 // Leaflet.Draw
 const drawnItems = L.featureGroup().addTo(map);
