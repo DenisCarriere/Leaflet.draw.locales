@@ -2,13 +2,14 @@ import cs from "./locales/cs";
 import en from "./locales/en";
 import es from "./locales/es";
 import fr from "./locales/fr";
+import ka from "./locales/ka";
 import nl from "./locales/nl";
 import pt from "./locales/pt";
 import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
 
-export const languages: Language[] = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl"];
+export const languages: Language[] = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl", "ka"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -91,6 +92,13 @@ export const drawLocales = (language: Language): DrawLocal => {
       locale = ru;
       break;
     }
+    case "ka":
+    case "ka-ka":
+    case "ka-ka.utf-8":
+    case "georgian": {
+      locale = ka;
+      break;
+    }
     case "nl":
     case "nl-nl":
     case "nl-nl.utf-8":
@@ -129,7 +137,8 @@ export type Language =
   | "cs" | "cs-cz" | "cs-cz.utf-8" | "czech"
   | "ru" | "ru-ru" | "ru-ru.utf-8" | "russian"
   | "nl" | "nl-nl" | "nl-nl.utf-8" | "dutch"
-         | "nl-be" | "nl-be.utf-8" | "belgian" | "flemish";
+         | "nl-be" | "nl-be.utf-8" | "belgian" | "flemish"
+  | "ka" | "ka-ka" | "ka-ka.utf-8" | "georgian";
 
 export interface DrawLocal {
   draw: Draw;
