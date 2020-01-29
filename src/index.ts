@@ -1,4 +1,5 @@
 import cs from "./locales/cs";
+import de from "./locales/de";
 import en from "./locales/en";
 import es from "./locales/es";
 import fr from "./locales/fr";
@@ -9,7 +10,7 @@ import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
 
-export const languages: Language[] = ["en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl", "ka"];
+export const languages: Language[] = ["de", "en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl", "ka"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -32,6 +33,18 @@ export const drawLocales = (language: Language): DrawLocal => {
   let locale = en;
 
   switch (language.toLocaleLowerCase()) {
+    case "de":
+    case "de-at":
+    case "de-be":
+    case "de-ch":
+    case "de-de":
+    case "de-li":
+    case "de-lu":
+    case "de-de.utf-8":
+    case "german": {
+      locale = de;
+      break;
+    }
     case "en":
     case "en-us":
     case "en-ca":
@@ -128,6 +141,7 @@ declare class L {
 }
 
 export type Language =
+  | "de" | "de-at" | "de-be" | "de-ch" | "de-de" | "de-li" | "de-lu" | "de-de.utf-8" | "german"
   | "en" | "en-us" | "en-us.utf-8" | "english" | "en-ca" | "en-gb"
   | "fr" | "fr-us" | "fr-us.utf-8" | "french" | "fr-ca"
   | "es" | "es-us" | "es-us.utf-8" | "spanish" | "es-ca"

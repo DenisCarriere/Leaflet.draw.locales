@@ -30,6 +30,7 @@ L.drawLocal = locale
 
 | Code | Language    |
 |------|-------------|
+| de   | German      |
 | en   | English     |
 | fr   | French      |
 | ka   | Georgian    |
