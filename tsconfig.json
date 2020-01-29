@@ -17,7 +17,7 @@
     "removeComments": false,
     "forceConsistentCasingInFileNames": true,
     "noUnusedParameters": true,
-    
+
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
 
