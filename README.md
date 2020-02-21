@@ -35,6 +35,7 @@ L.drawLocal = locale
 | fr   | French      |
 | ka   | Georgian    |
 | es   | Spanish     |
+| pl   | Polish      |
 | pt   | Portuguese  |
 | ru   | Russian     |
 | uk   | Ukrainian   |
