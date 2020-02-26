@@ -5,12 +5,13 @@ import es from "./locales/es";
 import fr from "./locales/fr";
 import ka from "./locales/ka";
 import nl from "./locales/nl";
+import pl from "./locales/pl";
 import pt from "./locales/pt";
 import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
 
-export const languages: Language[] = ["de", "en", "fr", "es", "ru", "cs", "uk", "pt", "sk", "nl", "ka"];
+export const languages: Language[] = ["de", "en", "fr", "es", "ru", "cs", "uk", "pl", "pt", "sk", "nl", "ka"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -75,6 +76,13 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "sk-sk.utf-8":
     case "slovak": {
       locale = sk;
+      break;
+    }
+    case "pl":
+    case "pl-pl":
+    case "pl-pl.utf-8":
+    case "polish": {
+      locale = pl;
       break;
     }
     case "pt":
@@ -146,6 +154,7 @@ export type Language =
   | "fr" | "fr-us" | "fr-us.utf-8" | "french" | "fr-ca"
   | "es" | "es-us" | "es-us.utf-8" | "spanish" | "es-ca"
   | "sk" | "sk-sk" | "sk-sk.utf-8" | "slovak"
+  | "pl" | "pl-pl" | "pl-pl.utf-8" | "polish"
   | "pt" | "pt-pt" | "pt-pt.utf-8" | "portuguese"
   | "uk" | "uk-ua" | "uk-ua.utf-8" | "ukrainian"
   | "cs" | "cs-cz" | "cs-cz.utf-8" | "czech"
