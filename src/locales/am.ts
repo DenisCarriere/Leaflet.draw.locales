@@ -28,11 +28,11 @@ const drawHandlers: DrawHandlers = {
     tooltip: {
       start: "ክብ ለመሳል ተጭንው ይጎትቱ",
     },
-    radius: "Radius",
+    radius: "ራዲየስ",
   },
   circlemarker: {
     tooltip: {
-      start: "ምልክት ለመሳል ካርታውን ይጫኑ ይጎትቱ",
+      start: "ክብ ምልክት ለመሳል ካርታውን ይጫኑ ይጎትቱ",
     },
   },
   marker: {
@@ -42,27 +42,27 @@ const drawHandlers: DrawHandlers = {
   },
   polygon: {
     tooltip: {
-      start: "Click to start drawing shape.",
-      cont: "Click to continue drawing shape.",
-      end: "Click first point to close this shape.",
+      start: "ቅርጽን ለመሳል ካርታውን ተጭነው ይጎትቱ",
+      cont: "ቅርጽን መሳሎን ለመቀጠል ይጫኑ",
+      end: "ቅርጽን ስሎ ለመጨረስ የመጀመሪያውን ነጥብ ይጫኑ",
     },
   },
   polyline: {
-    error: "<strong>Error:</strong> shape edges cannot cross!",
+    error: "<strong>ስህተት:</strong> መስመሮች እርስ በእርስ መተላለፍ አይችሉም!",
     tooltip: {
-      start: "Click to start drawing line.",
-      cont: "Click to continue drawing line.",
-      end: "Click last point to finish line.",
+      start: "መስመር ለመሳል ካርታውን ተጭነው ይጎትቱ",
+      cont: "መስመር መሳሎን ለመቀጠል ይጫኑ",
+      end: "መስመር ስሎ ለመጨረስ የመጨረሻውን ነጥብ ይጫኑ",
     },
   },
   rectangle: {
     tooltip: {
-      start: "Click and drag to draw rectangle.",
+      start: "ዐራት መአዝን ለመሳል ካርታውን ይጫኑ ይጎትቱ",
     },
   },
   simpleshape: {
     tooltip: {
-      end: "Release mouse to finish drawing.",
+      end: "ስለው ለመጨረስ አይጤን ይልቀቁ",
     },
   },
 };
@@ -70,36 +70,36 @@ const drawHandlers: DrawHandlers = {
 const editToolbar: EditToolbar = {
   actions: {
     save: {
-      title: "Save changes.",
-      text: "Save",
+      title: "ለውጦቹን አኑር",
+      text: "አኑር",
     },
     cancel: {
-      title: "Cancel editing, discards all changes.",
-      text: "Cancel",
+      title: "ማስተካከሉን ተው፣ ሁሉንም ለውጦች ሰርዝ",
+      text: "ተው",
     },
     clearAll: {
-      title: "Clear all layers.",
-      text: "Clear All",
+      title: "ሁሉንም የካርታ ገጾች አጥፋ",
+      text: "ሁሉንም አጥፋ",
     },
   },
   buttons: {
-    edit: "Edit layers.",
-    editDisabled: "No layers to edit.",
-    remove: "Delete layers.",
-    removeDisabled: "No layers to delete.",
+    edit: "የካርታ ገጽ አስተካክል",
+    editDisabled: "የሚስተካከል የካርታ ገጽ የለም",
+    remove: "የካርታ ገጽ ሰርዝ.",
+    removeDisabled: "የሚሰረዝ የካርታ ገጽ የለም",
   },
 };
 
 const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
-      text: "Drag handles, or marker to edit feature.",
-      subtext: "Click cancel to undo changes.",
+      text: "ለማስተካከል ምልክቱን ወይም መያዣውን ይጎትቱ",
+      subtext: "ለውጥጡን ለመተው ተው የሚለውን ይጫኑ",
     },
   },
   remove: {
     tooltip: {
-      text: "Click on a feature to remove",
+      text: "ማጥፋት የፈለጉትን ይጫኑ",
     },
   },
 };
