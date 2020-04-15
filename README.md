@@ -6,6 +6,9 @@
 
 > Localization for [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw), changing between languages is now effortless.
 
+![image](https://user-images.githubusercontent.com/550895/79383673-92bad980-7f33-11ea-8abc-8d34e838bd55.png)
+
+
 ## Install
 
 ```bash
