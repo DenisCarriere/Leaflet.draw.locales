@@ -3,6 +3,7 @@ import cs from "./locales/cs";
 import de from "./locales/de";
 import en from "./locales/en";
 import es from "./locales/es";
+import fi from "./locales/fi";
 import fr from "./locales/fr";
 import it from "./locales/it";
 import ka from "./locales/ka";
@@ -14,7 +15,7 @@ import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
 
-export const languages: Language[] = ["am", "cs", "de", "en", "es", "fr", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk"];
+export const languages: Language[] = ["am", "cs", "de", "en", "es", "fi", "fr", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -56,6 +57,13 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "en-us.utf-8":
     case "english": {
       locale = en;
+      break;
+    }
+    case "fi":
+    case "fi-fi":
+    case "fi-fi.utf-8":
+    case "finnish": {
+      locale = fi;
       break;
     }
     case "fr":
@@ -177,6 +185,7 @@ declare class L {
 export type Language =
   | "de" | "de-at" | "de-be" | "de-ch" | "de-de" | "de-li" | "de-lu" | "de-de.utf-8" | "german"
   | "en" | "en-us" | "en-us.utf-8" | "english" | "en-ca" | "en-gb"
+  | "fi" | "fi-fi" | "fi-fi.utf-8" | "finnish"
   | "fr" | "fr-us" | "fr-us.utf-8" | "french" | "fr-ca"
   | "es" | "es-us" | "es-us.utf-8" | "spanish" | "es-ca"
   | "sk" | "sk-sk" | "sk-sk.utf-8" | "slovak"
@@ -188,7 +197,7 @@ export type Language =
   | "cs" | "cs-cz" | "cs-cz.utf-8" | "czech"
   | "ru" | "ru-ru" | "ru-ru.utf-8" | "russian"
   | "nl" | "nl-nl" | "nl-nl.utf-8" | "dutch"
-         | "nl-be" | "nl-be.utf-8" | "belgian" | "flemish"
+  | "nl-be" | "nl-be.utf-8" | "belgian" | "flemish"
   | "ka" | "ka-ka" | "ka-ka.utf-8" | "georgian"
   | "it" | "it-it" | "it-it.utf-8" | "italiano" | "italian" | "it-ch" | "it-ch.utf-8";
 
