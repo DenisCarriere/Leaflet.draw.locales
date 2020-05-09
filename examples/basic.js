@@ -17,6 +17,10 @@ drawLocales("nl")
 
 // Leaflet.Draw
 const drawnItems = L.featureGroup().addTo(map);
+
+// re-trigger LeafletDraw.Locales
+drawLocales("nl")
+
 map.addControl(new L.Control.Draw({
     edit: {
         featureGroup: drawnItems,
