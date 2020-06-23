@@ -31,24 +31,25 @@ L.drawLocal = locale
 
 ## Languages
 
-| Code | Language    |
-|------|-------------|
-| de   | German      |
-| en   | English     |
-| fi   | Finnish     |
-| fr   | French      |
-| it   | Italian     |
-| ka   | Georgian    |
-| es   | Spanish     |
-| pl   | Polish      |
-| pt   | Portuguese  |
-| ru   | Russian     |
-| uk   | Ukrainian   |
-| cs   | Czech       |
-| sk   | Slovak      |
-| nl   | Dutch       |
-| no   | Norwegian   |
-| am   | Amharic     |
+| Code | Language   |
+| ---- | ---------- |
+| de   | German     |
+| en   | English    |
+| fi   | Finnish    |
+| fr   | French     |
+| it   | Italian    |
+| ka   | Georgian   |
+| es   | Spanish    |
+| pl   | Polish     |
+| pt   | Portuguese |
+| ru   | Russian    |
+| uk   | Ukrainian  |
+| cs   | Czech      |
+| sk   | Slovak     |
+| nl   | Dutch      |
+| no   | Norwegian  |
+| am   | Amharic    |
+| zh   | Chinese    |
 
 
 ## Submit a language
