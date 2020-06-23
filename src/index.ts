@@ -14,8 +14,9 @@ import pt from "./locales/pt";
 import ru from "./locales/ru";
 import sk from "./locales/sk";
 import uk from "./locales/uk";
+import zh from "./locales/zh";
 
-export const languages: Language[] = ["am", "cs", "de", "en", "es", "fi", "fr", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk"];
+export const languages: Language[] = ["am", "cs", "de", "en", "es", "fi", "fr", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -164,6 +165,12 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "italian":
       locale = it;
       break;
+    case "zh":
+    case "zh-cn":
+    case "zh-cn.utf-8":
+    case "chinese":
+      locale = zh;
+      break;
     default:
       throw new Error("[language] not found");
   }
@@ -199,7 +206,8 @@ export type Language =
   | "nl" | "nl-nl" | "nl-nl.utf-8" | "dutch"
   | "nl-be" | "nl-be.utf-8" | "belgian" | "flemish"
   | "ka" | "ka-ka" | "ka-ka.utf-8" | "georgian"
-  | "it" | "it-it" | "it-it.utf-8" | "italiano" | "italian" | "it-ch" | "it-ch.utf-8";
+  | "it" | "it-it" | "it-it.utf-8" | "italiano" | "italian" | "it-ch" | "it-ch.utf-8"
+  | "zh" | "zh-cn" | "zh-cn.utf-8" | "chinese";
 
 export interface DrawLocal {
   draw: Draw;
