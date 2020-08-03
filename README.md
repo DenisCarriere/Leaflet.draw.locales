@@ -49,6 +49,7 @@ L.drawLocal = locale
 | nl   | Dutch       |
 | no   | Norwegian   |
 | am   | Amharic     |
+| ar   | Arabic     |
 
 
 ## Submit a language
