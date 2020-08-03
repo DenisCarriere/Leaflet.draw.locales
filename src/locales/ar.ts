@@ -70,36 +70,36 @@ const drawHandlers: DrawHandlers = {
 const editToolbar: EditToolbar = {
   actions: {
     save: {
-      title: "Save changes.",
-      text: "Save",
+      title: "حفظ التغييرات",
+      text: "حفظ",
     },
     cancel: {
-      title: "Cancel editing, discards all changes.",
-      text: "Cancel",
+      title: "الغاء كل التعديلات",
+      text: "الغاء",
     },
     clearAll: {
-      title: "Clear all layers.",
-      text: "Clear All",
+      title: "مسح كل الطبقات",
+      text: "مسح الكل",
     },
   },
   buttons: {
-    edit: "Edit layers.",
-    editDisabled: "No layers to edit.",
-    remove: "Delete layers.",
-    removeDisabled: "No layers to delete.",
+    edit: "تعديل الطبقات",
+    editDisabled: "لاتوجد طبقات للتعديل",
+    remove: "مسح الطبقات",
+    removeDisabled: "لا يوجد طبقات للمسح",
   },
 };
 
 const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
-      text: "Drag handles, or marker to edit feature.",
-      subtext: "Click cancel to undo changes.",
+      text: "اسحب للتعديل",
+      subtext: "اضغط الغاء لمسح التعديلات",
     },
   },
   remove: {
     tooltip: {
-      text: "Click on a feature to remove",
+      text: "اضغط على رسمة للمسح",
     },
   },
 };
