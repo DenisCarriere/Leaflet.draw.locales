@@ -19,45 +19,45 @@ const drawToolbar: DrawToolbar = {
     rectangle: "Desenhar um retângulo",
     circle: "Desenhar um círculo",
     marker: "Desenhar un marcador",
-    circlemarker: "Dibujar un marcador circular",
+    circlemarker: "Desenhar um marcador circular",
   },
 };
 
 const drawHandlers: DrawHandlers = {
   circle: {
     tooltip: {
-      start: "Clicar e arrastrar para desenhar o círculo.",
+      start: "Clique e arrastrar para desenhar o círculo.",
     },
     radius: "Raio",
   },
   circlemarker: {
     tooltip: {
-      start: "Clicar no mapa para colocar o marcador circular.",
+      start: "Clique no mapa para colocar o marcador circular.",
     },
   },
   marker: {
     tooltip: {
-      start: "Clicar no mapa para colocar o marcador.",
+      start: "Clique no mapa para colocar o marcador.",
     },
   },
   polygon: {
     tooltip: {
-      start: "Clicar para começar a desenhar a figura.",
-      cont: "Clicar para continuar desnhando a figura.",
-      end: "Clicar no primeiro ponto para fechar esta figura.",
+      start: "Clique para começar a desenhar a figura.",
+      cont: "Clique para continuar desenhando a figura.",
+      end: "Clique no primeiro ponto para fechar esta figura.",
     },
   },
   polyline: {
     error: "<strong>Erro:</strong> as bordas de forma não podem atravessar!",
     tooltip: {
-      start: "Clicar para começar a desenhar a linha.",
-      cont: "Clicar para continuar desnhando a linha.",
-      end: "Clicar no último ponto para terminar a linha.",
+      start: "Clique para começar a desenhar a linha.",
+      cont: "Clique para continuar desenhando a linha.",
+      end: "Clique no último ponto para terminar a linha.",
     },
   },
   rectangle: {
     tooltip: {
-      start: "Clicar e arrastrar para desenhar o retângulo.",
+      start: "Clique e arrastrar para desenhar o retângulo.",
     },
   },
   simpleshape: {
@@ -94,7 +94,7 @@ const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
       text: "Arrastar manipuladores ou marcadores para editar a figura.",
-      subtext: "Clicar em cancelar para desfazer as alterações.",
+      subtext: "Clique em cancelar para desfazer as alterações.",
     },
   },
   remove: {
