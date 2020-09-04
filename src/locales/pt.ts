@@ -48,7 +48,7 @@ const drawHandlers: DrawHandlers = {
     },
   },
   polyline: {
-    error: "<strong>Erro:</strong> as bordas de forma não podem atravessar!",
+    error: "<strong>Erro:</strong> as bordas de uma forma não podem atravessar!",
     tooltip: {
       start: "Clique para começar a desenhar a linha.",
       cont: "Clique para continuar desenhando a linha.",
@@ -62,7 +62,7 @@ const drawHandlers: DrawHandlers = {
   },
   simpleshape: {
     tooltip: {
-      end: "Soltar o mouse para terminar o desenho.",
+      end: "Solte o mouse para terminar o desenho.",
     },
   },
 };
@@ -93,7 +93,7 @@ const editToolbar: EditToolbar = {
 const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
-      text: "Arrastar manipuladores ou marcadores para editar a figura.",
+      text: "Arraste os manipuladores ou marcadores para editar a figura.",
       subtext: "Clique em cancelar para desfazer as alterações.",
     },
   },
