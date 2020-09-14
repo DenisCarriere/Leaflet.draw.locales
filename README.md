@@ -35,8 +35,10 @@ L.drawLocal = locale
 |------|-------------|
 | de   | German      |
 | en   | English     |
+| ar   | Arabic      |
 | fi   | Finnish     |
 | fr   | French      |
+| hu   | Hungarian   |
 | it   | Italian     |
 | ka   | Georgian    |
 | es   | Spanish     |
@@ -49,7 +51,7 @@ L.drawLocal = locale
 | nl   | Dutch       |
 | no   | Norwegian   |
 | am   | Amharic     |
-| ar   | Arabic     |
+| zh   | Chinese     |
 
 
 ## Submit a language
