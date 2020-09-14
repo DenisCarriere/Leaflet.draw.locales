@@ -99,7 +99,7 @@ const editHandlers: EditHandlers = {
   },
   remove: {
     tooltip: {
-      text: "Cliquez sur un entité pour supprimer",
+      text: "Cliquez sur une entité pour supprimer",
     },
   },
 };
