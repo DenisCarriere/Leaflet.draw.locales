@@ -15,7 +15,7 @@ const drawToolbar: DrawToolbar = {
   },
   buttons: {
     polyline: "Tegn flere linjer",
-    polygon: "Tegn mange linjer sammen",
+    polygon: "Tegn en mangekant",
     rectangle: "Tegn et rektangel",
     circle: "Tegn en sirkel",
     marker: "Sett et markeringspunkt",
@@ -37,22 +37,22 @@ const drawHandlers: DrawHandlers = {
   },
   marker: {
     tooltip: {
-      start: "Klikk på kartet for å markere et sted.",
+      start: "Klikk på kartet for å markere et punkt.",
     },
   },
   polygon: {
     tooltip: {
-      start: "Klikk for å tegne.",
+      start: "Klikk for å tegne et område.",
       cont: "Klikk for å fortsette tegningen.",
-      end: "Klikk på det første punktet for å lukke tegningen.",
+      end: "Klikk på det første punktet for å lukke området.",
     },
   },
   polyline: {
-    error: "<strong>Error:</strong> shape edges cannot cross!",
+    error: "<strong>Error:</strong> kantene kan ikke krysses!",
     tooltip: {
-      start: "Klikk for å tegne linje.",
-      cont: "Klikk for å fortsette å tegne linje.",
-      end: "Kikk siste punkt for å ferdiggjøre linje.",
+      start: "Klikk for å tegne en linje.",
+      cont: "Klikk for å fortsette å tegne linjen.",
+      end: "Kikk siste punkt for å ferdiggjøre linjen.",
     },
   },
   rectangle: {
@@ -62,7 +62,7 @@ const drawHandlers: DrawHandlers = {
   },
   simpleshape: {
     tooltip: {
-      end: "Slipp opp musen for å gjøre ferdig tegningen.",
+      end: "Slipp museknappen for å gjøre tegningen ferdig.",
     },
   },
 };
@@ -74,19 +74,19 @@ const editToolbar: EditToolbar = {
       text: "Lagre",
     },
     cancel: {
-      title: "Avbryt redigering og forkast alle endringer.",
-      text: "Avryt",
+      title: "Avbryt redigering og forkast endringer.",
+      text: "Avbryt",
     },
     clearAll: {
-      title: "Nullstill alle lag.",
+      title: "Nullstill alle figurer.",
       text: "Nullstill alt.",
     },
   },
   buttons: {
-    edit: "Rediger lag.",
-    editDisabled: "Ingen lag å redigere.",
-    remove: "Slett lag.",
-    removeDisabled: "Ingen lag å slette.",
+    edit: "Rediger figur.",
+    editDisabled: "Ingen figur å redigere.",
+    remove: "Slett figur.",
+    removeDisabled: "Ingen figur å slette.",
   },
 };
 
