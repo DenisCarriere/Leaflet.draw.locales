@@ -32,12 +32,12 @@ const drawHandlers: DrawHandlers = {
   },
   circlemarker: {
     tooltip: {
-      start: "Kliknij, aby umieścić okrągły znacznik.",
+      start: "Kliknij na mapę, aby umieścić okrągły znacznik.",
     },
   },
   marker: {
     tooltip: {
-      start: "Kliknij, aby umieścić znacznik.",
+      start: "Kliknij na mapę, aby umieścić znacznik.",
     },
   },
   polygon: {
