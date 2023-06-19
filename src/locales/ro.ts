@@ -26,38 +26,38 @@ const drawToolbar: DrawToolbar = {
 const drawHandlers: DrawHandlers = {
   circle: {
     tooltip: {
-      start: "Faceți clic și trageți pentru a desena cerc.",
+      start: "Dați clic și trageți pentru a desena cerc.",
     },
     radius: "Rază",
   },
   circlemarker: {
     tooltip: {
-      start: "Faceți clic pe hartă pentru a plasa marcatorul cercului.",
+      start: "Dați clic pe hartă pentru a plasa marcatorul cercului.",
     },
   },
   marker: {
     tooltip: {
-      start: "Faceți clic pe hartă pentru a plasa marcatorul.",
+      start: "Dați clic pe hartă pentru a plasa marcatorul.",
     },
   },
   polygon: {
     tooltip: {
-      start: "Faceți clic pentru a începe să desenați forma.",
-      cont: "Faceți clic pentru a continua să desenați forma.",
-      end: "Faceți clic pe primul punct pentru a închide această formă.",
+      start: "Dați clic pentru a începe desenarea parcelei",
+      cont: "Dați clic pentru a continua desenarea parcelei",
+      end: "Dați clic pe primul punct pentru a închide această parcelei.",
     },
   },
   polyline: {
     error: "<strong>Eroare:</strong> marginile formei nu se pot traversa!",
     tooltip: {
-      start: "Faceți clic pentru a începe să desenați o linie.",
-      cont: "Faceți clic pentru a continua să desenați linia.",
-      end: "Faceți clic pe ultimul punct pentru a ajunge la linia de sosire.",
+      start: "Daţi clic pentru a începe să desenezi o linie.",
+      cont: "Daţi clic pentru a continua să desenezi linia.",
+      end: "Dați clic pe ultimul punct pentru a ajunge la linia de sosire.",
     },
   },
   rectangle: {
     tooltip: {
-      start: "Faceți clic și trageți pentru a desena dreptunghi.",
+      start: "Dați clic și trageți pentru a desena dreptunghi.",
     },
   },
   simpleshape: {
@@ -94,12 +94,12 @@ const editHandlers: EditHandlers = {
   edit: {
     tooltip: {
       text: "Trageți mânerele sau marcatorul pentru a edita caracteristica.",
-      subtext: "Faceți clic pe Anulare pentru a anula modificările.",
+      subtext: "Dați clic pe Anulare pentru a anula modificările.",
     },
   },
   remove: {
     tooltip: {
-      text: "Faceți clic pe o caracteristică pentru a o elimina",
+      text: "Dați clic pe o caracteristică pentru a o elimina",
     },
   },
 };
