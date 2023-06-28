@@ -53,6 +53,7 @@ L.drawLocal = locale
 | am   | Amharic     |
 | zh   | Chinese     |
 | tr   | Turkish     |
+| ro   | Romanian    |
 
 
 ## Submit a language

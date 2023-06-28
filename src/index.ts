@@ -18,8 +18,9 @@ import uk from "./locales/uk";
 import ar from "./locales/ar";
 import zh from "./locales/zh";
 import tr from "./locales/tr";
+import ro from "./locales/ro";
 
-export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr"];
+export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr", "ro"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -196,6 +197,13 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "turkish":
       locale = tr;
       break;
+    case "ro":
+    case "ro-ro":
+    case "ro-RO":
+    case "ro-ro.utf-8":
+    case "romanian":
+      locale = ro;
+      break;
     default:
       throw new Error("[language] not found");
   }
@@ -235,7 +243,8 @@ export type Language =
   | "it" | "it-it" | "it-it.utf-8" | "italiano" | "italian" | "it-ch" | "it-ch.utf-8"
   | "hu" | "hu-HU" | "hu-hu" | "hu-HU.utf-8" | "hu-hu.utf-8" | "magyar" | "hungarian"
   | "zh" | "zh-cn" | "zh-cn.utf-8" | "chinese"
-  | "tr" | "tr-tr" | "tr-tr.utf-8" | "turkish";
+  | "tr" | "tr-tr" | "tr-tr.utf-8" | "turkish"
+  | "ro" | "ro-ro" | "ro-RO" | "ro-ro.utf-8" | "romanian";
 
 export interface DrawLocal {
   draw: Draw;
@@ -262,12 +271,12 @@ export interface DrawToolbar {
   finish: Action;
   undo: Action;
   buttons: {
-    polyline: string
-    polygon: string
-    rectangle: string
-    circle: string
-    marker: string
-    circlemarker: string,
+    polyline: string;
+    polygon: string;
+    rectangle: string;
+    circle: string;
+    marker: string;
+    circlemarker: string;
   };
 }
 
@@ -280,71 +289,71 @@ export interface Tooltip {
 export interface DrawHandlers {
   circle: {
     tooltip: {
-      start: string,
-    }
-    radius: string,
+      start: string;
+    };
+    radius: string;
   };
   circlemarker: {
     tooltip: {
-      start: string,
-    },
+      start: string;
+    };
   };
   marker: {
     tooltip: {
-      start: string,
-    },
+      start: string;
+    };
   };
   polygon: {
     tooltip: {
-      start: string,
-      cont: string,
-      end: string,
-    },
+      start: string;
+      cont: string;
+      end: string;
+    };
   };
   polyline: {
-    error: string
+    error: string;
     tooltip: {
-      start: string,
-      cont: string,
-      end: string,
-    },
+      start: string;
+      cont: string;
+      end: string;
+    };
   };
   rectangle: {
     tooltip: {
-      start: string,
-    },
+      start: string;
+    };
   };
   simpleshape: {
     tooltip: {
-      end: string,
-    },
+      end: string;
+    };
   };
 }
 
 export interface EditToolbar {
   actions: {
-    save: Action
-    cancel: Action
-    clearAll: Action,
+    save: Action;
+    cancel: Action;
+    clearAll: Action;
   };
   buttons: {
-    edit: string
-    editDisabled: string
-    remove: string
-    removeDisabled: string,
+    edit: string;
+    editDisabled: string;
+    remove: string;
+    removeDisabled: string;
   };
 }
 
 export interface EditHandlers {
   edit: {
     tooltip: {
-      text: string
-      subtext: string,
-    },
+      text: string;
+      subtext: string;
+    };
   };
   remove: {
     tooltip: {
-      text: string,
-    },
+      text: string;
+    };
   };
 }
