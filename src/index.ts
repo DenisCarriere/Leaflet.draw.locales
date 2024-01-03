@@ -3,6 +3,7 @@ import cs from "./locales/cs";
 import de from "./locales/de";
 import en from "./locales/en";
 import es from "./locales/es";
+import fa from "./locales/fa";
 import fi from "./locales/fi";
 import fr from "./locales/fr";
 import hu from "./locales/hu";
@@ -20,7 +21,7 @@ import zh from "./locales/zh";
 import tr from "./locales/tr";
 import ro from "./locales/ro";
 
-export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr", "ro"];
+export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fa", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr", "ro"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -69,6 +70,12 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "ar-eg":
     case "arabic": {
       locale = ar;
+      break;
+    }
+    case "fa":
+    case "fa-ir":
+    case "persian": {
+      locale = fa;
       break;
     }
     case "fi":
