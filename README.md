@@ -36,6 +36,7 @@ L.drawLocal = locale
 | de   | German      |
 | en   | English     |
 | ar   | Arabic      |
+| fa   | Persian     |
 | fi   | Finnish     |
 | fr   | French      |
 | hu   | Hungarian   |
