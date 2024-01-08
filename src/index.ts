@@ -233,6 +233,7 @@ export type Language =
   | "de" | "de-at" | "de-be" | "de-ch" | "de-de" | "de-li" | "de-lu" | "de-de.utf-8" | "german"
   | "en" | "en-us" | "en-us.utf-8" | "english" | "en-ca" | "en-gb"
   | "ar" | "ar-ae" | "english"
+  | "fa" | "fa-ir" | "persian"
   | "fi" | "fi-fi" | "fi-fi.utf-8" | "finnish"
   | "fr" | "fr-us" | "fr-us.utf-8" | "french" | "fr-ca"
   | "es" | "es-us" | "es-us.utf-8" | "spanish" | "es-ca"
