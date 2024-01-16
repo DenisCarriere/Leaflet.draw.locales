@@ -19,8 +19,9 @@ import ar from "./locales/ar";
 import zh from "./locales/zh";
 import tr from "./locales/tr";
 import ro from "./locales/ro";
+import vi from "./locales/vi";
 
-export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr", "ro"];
+export const languages: Language[] = ["ar", "am", "cs", "de", "en", "es", "fi", "fr", "hu", "it", "ka", "nl", "no", "pl", "pt", "ru", "sk", "uk", "zh", "tr", "ro", "vi"];
 
 /**
  * Localization for Leaflet.draw, changing between languages is now effortless.
@@ -204,6 +205,12 @@ export const drawLocales = (language: Language): DrawLocal => {
     case "romanian":
       locale = ro;
       break;
+    case "vi":
+    case "vi-vn":
+    case "vi-vn.utf-8":
+    case "vietnamese":
+      locale = vi;
+      break;
     default:
       throw new Error("[language] not found");
   }
@@ -244,7 +251,8 @@ export type Language =
   | "hu" | "hu-HU" | "hu-hu" | "hu-HU.utf-8" | "hu-hu.utf-8" | "magyar" | "hungarian"
   | "zh" | "zh-cn" | "zh-cn.utf-8" | "chinese"
   | "tr" | "tr-tr" | "tr-tr.utf-8" | "turkish"
-  | "ro" | "ro-ro" | "ro-RO" | "ro-ro.utf-8" | "romanian";
+  | "ro" | "ro-ro" | "ro-RO" | "ro-ro.utf-8" | "romanian"
+  | "vi" | "vi-vn" | "vi-vn.utf-8" | "vietnamese";
 
 export interface DrawLocal {
   draw: Draw;

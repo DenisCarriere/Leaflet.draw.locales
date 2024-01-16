@@ -54,6 +54,7 @@ L.drawLocal = locale
 | zh   | Chinese     |
 | tr   | Turkish     |
 | ro   | Romanian    |
+| vi   | Vietnamese  |
 
 
 ## Submit a language
@@ -63,7 +64,7 @@ L.drawLocal = locale
 - Copy-paste an existing `.ts` language from `src/locales/` as your template
 - Include your new language in `src/index.ts`, it should be included at:
   - The import at the top, import your new file
-  - The `language` contant should get the 2 letter identification for the language
+  - The `languages` contant should get the 2 letter identification for the language
   - The switch-case should be updated to support cases for your language, setting the `locale` to the 2 letter code for the language
   - The `Language` type should be edited to include a union of all possible cases for the language you added
 - Include your language in the table in `README.md`
