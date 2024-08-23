@@ -54,6 +54,7 @@ L.drawLocal = locale
 | zh   | Chinese     |
 | tr   | Turkish     |
 | ro   | Romanian    |
+| bg   | Bulgarian   |
 
 
 ## Submit a language
